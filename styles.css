@@ -67,7 +67,7 @@ nav ul li a:hover {
 
 /* Hero section styles */
 .hero {
-  background: url("https://i.ibb.co/JqF3x1q/GODSENT-FINX-HERO-BANNER.webp") no-repeat center center/cover;
+  background: url("https://i.ibb.co/JqF3x1q/GODSENT-FINX-HERO-BANNER.webp") no-repeat center center/contain;
   color: #fff;
   padding: 100px 0;
   text-align: center;
@@ -88,6 +88,22 @@ nav ul li a:hover {
   text-decoration: none;
   border-radius: 5px;
   animation: blink 1s infinite; /* Apply blinking effect */
+}
+
+/* When the screen size is 600px or less, adjust the height and width */
+@media screen and (max-width: 600px) {
+  .hero {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+/* When the screen size is 400px or less, adjust the height and width */
+@media screen and (max-width: 400px) {
+  .hero {
+    height: 100px;
+    width: 100px;
+  }
 }
 
 /* Services, about, contact, and faq section styles */
@@ -291,4 +307,19 @@ nav ul li a:hover {
   100% {
     opacity: 1;
   }
+
+/* When the screen size is 600px or less, adjust the height and width */
+@media screen and (max-width: 600px) {
+    .container {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+/* When the screen size is 400px or less, adjust the height and width */
+@media screen and (max-width: 400px) {
+    .container {
+        height: 100px;
+        width: 100px;
+    }
 }
