@@ -10,6 +10,12 @@
 /* Responsive styles for screens up to 600px wide */
 @media only screen and (max-width: 600px) {
   /* Add your CSS rules for screens up to 600px wide here */
+  nav ul {
+    display: none;
+  }
+  .dropdown-menu {
+    display: block;
+  }
 }
 
 /* Ensure images and videos don't exceed their container's width */
@@ -63,6 +69,16 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #007bff;
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+.dropdown-btn {
+  display: block;
+  cursor: pointer;
+  margin-right: 20px;
 }
 
 /* Hero section styles */
@@ -251,9 +267,9 @@ nav ul li a:hover {
   nav ul li {
     margin: 10px 0;
   }
-  .gold-stars {
+  .gold
+.gold-stars {
     color: gold;
-  }
 }
 
 /* Header authentication buttons */
@@ -284,7 +300,7 @@ nav ul li a:hover {
   }
   
   .register-button:hover {
-	  color: purple;
+      color: purple;
   }
   
   .login-button:active, .register-button:active {
@@ -322,4 +338,51 @@ nav ul li a:hover {
         height: 100px;
         width: 100px;
     }
+}
+
+/* Dropdown menu styles */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Hero section styles */
+.hero {
+  background: url("https://i.ibb.co/JqF3x1q/GODSENT-FINX-HERO-BANNER.webp") no-repeat center center/cover;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
+}
+
+/* When the screen size is 600px or less, adjust the height and width */
+@media screen and (max-width: 600px) {
+  .hero {
+    padding: 50px 0;
+  }
+}
+
+/* When the screen size is 400px or less, adjust the height and width */
+@media screen and (max-width: 400px) {
+  .hero {
+    padding: 30px 0;
+  }
 }
