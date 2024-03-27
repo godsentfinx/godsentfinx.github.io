@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Copperplate+Gothic+Light&family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Responsive styles for screens up to 600px wide */
+@media only screen and (max-width: 600px) {
+  /* Add your CSS rules for screens up to 600px wide here */
+}
+
+/* Ensure images and videos don't exceed their container's width */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Base styles for the body */
+body {
+  font-family: "Lora", serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+/* Container styles to limit content width */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+nav img {
+  height: 100px; /* Logo size */
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+}
+
+nav ul li a:hover {
+  color: #007bff;
+}
+
+/* Hero section styles */
+.hero {
+  background: url("https://i.ibb.co/72LvF5G/GODSENT-FINX-HERO-BANNER.png") no-repeat center center/cover;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
+  height: 500px; /* Adjust based on your banner's actual height */
+}
+
+.hero .register-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px; /* Adjust width as needed */
+  padding: 10px 20px;
+  background-color: #007bff; /* Adjust button color as needed */
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  animation: blink 1s infinite; /* Apply blinking effect */
+}
+
+/* Services, about, contact, and faq section styles */
+.services-section,
+.about-section,
+.contact-section,
+.faq-section {
+  padding: 40px 0;
+}
+
+.service,
+.about,
+.contact,
+.faq,
+.testimony {
+  background: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service h2,
+.about h2,
+.contact h2,
+.faq h2,
+.testimony h2 {
+  font-family: "Copperplate Gothic Light", sans-serif;
+  color: #007bff;
+}
+
+.faq {
+    max-width: 800px; /* Set maximum width for the FAQ section */
+    margin: 0 auto; /* Center the FAQ section horizontally */
+}
+
+.faq-item {
+    background-color: #f9f9f9; /* Background color for each FAQ item */
+    border: 1px solid #ddd; /* Border for each FAQ item */
+    margin-bottom: 15px; /* Margin bottom between FAQ items */
+    padding: 15px; /* Padding for each FAQ item */
+}
+
+.question-box {
+    margin-bottom: 15px; /* Margin bottom for question box */
+}
+
+.question {
+    margin-bottom: 10px; /* Margin bottom for question */
+}
+
+.answer {
+    color: #333; /* Text color for answer */
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.contact form button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.contact form button:hover {
+  background-color: #0056b3;
+}
+
+.testimony-container {
+    max-height: 400px; /* Set maximum height for container */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.testimony {
+    background-color: #f9f9f9; /* Background color */
+    border: 1px solid #ddd; /* Border */
+    margin-bottom: 15px; /* Margin bottom */
+    padding: 15px; /* Padding */
+}
+
+.testimony h3 {
+    margin-top: 0; /* Remove top margin for heading */
+}
+
+.testimony p {
+    margin-bottom: 10px; /* Bottom margin for paragraphs */
+}
+
+.testimony p:last-child {
+    margin-bottom: 0; /* Remove bottom margin for last paragraph */
+}
+
+.testimony span {
+    color: gold; /* Text color for rating */
+    font-size: 18px; /* Font size for rating */
+    font-weight: bold; /* Bold font weight for rating */
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 100px; /* Adjust size as needed */
+}
+
+.footer-info p {
+  margin: 5px 0;
+}
+
+.footer-info a {
+  color: #fff;
+}
+
+/* Responsive styles for screens up to 768px wide */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+  .gold-stars {
+    color: gold;
+  }
+}
+
+/* Header authentication buttons */
+.header .auth-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.header .auth-buttons a {
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+.login-button, .register-button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+
+  .login-button:hover {
+    color: purple;
+  }
+  
+  .register-button:hover {
+	  color: purple;
+  }
+  
+  .login-button:active, .register-button:active {
+    background-color: black;
+    color: white;
+  }
+ 
+/* Blinking effect */
+.blinking {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
