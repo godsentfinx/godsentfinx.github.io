@@ -94,7 +94,7 @@ nav ul li a:focus {
   padding: 100px 0;
   text-align: center;
   position: relative;
-  height: 100vh; /* Set the height to cover the entire viewport */
+  height: 80vh; /* Set the height to cover the entire viewport */
 }
 
 .hero .register-button {
