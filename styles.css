@@ -103,7 +103,7 @@ nav ul li a:focus {
 }
 
 .hero .hero-container {
-  height: 18em; /* Adjusted height for approximately 16 lines of text */
+  height: 25em; /* Adjusted height to accommodate more content */
 }
 
 .hero .hero-banner {
