@@ -131,8 +131,6 @@ nav ul li a:hover {
   word-wrap: break-word; /* Ensure long text wraps within container */
 }
 
-}
-
 .service h2,
 .about h2,
 .contact h2,
@@ -274,11 +272,12 @@ nav ul li a:hover {
 }
 
 /* When the screen size is 400px or less, adjust the height and width */
-@media screen and (max-width: 400px) {
-  .hero {
+@media screen and (max-width: 400px) {  
+.hero {
     padding: 30px 0;
   }
 }
+
 /* Dropdown menu styles */
 .dropdown-content {
   display: none;
@@ -303,6 +302,7 @@ nav ul li a:hover {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 .login-button {
   background-color: black;
   color: white;
