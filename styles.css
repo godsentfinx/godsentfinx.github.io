@@ -24,7 +24,7 @@ body {
 
 /* Container styles to limit content width */
 .container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: auto;
   padding: 0 20px;
 }
@@ -102,7 +102,7 @@ nav ul li a:focus {
   position: relative;
 }
 
-.hero .hero-container {
+.hero-container {
   height: 25em; /* Adjusted height to accommodate more content */
 }
 
